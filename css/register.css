@@ -1,0 +1,160 @@
+:root{
+    --main-color:#8b0000;
+}
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Righteous&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('../img/background.jpg');
+    background-size: cover;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* //Text Styles */
+.txtl{
+    font-size:2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.txtm{
+    font-size:1.2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.txts{
+    font-size:0.8rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+/* Register-Begin */
+
+/* Nav item */
+.nav{
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav_menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+#nav_menu li a{
+    color: #fff;
+}
+
+.logo h5{
+    font-size: 25px;
+    color: #ff69b4;
+}
+
+/* Form */
+
+#main{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin:0;
+}
+
+.righteous{
+    font-family: 'Righteous', cursive;
+}
+
+.box{
+    background-color: #ffefd5;
+    border-radius: 5px;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.6);
+}
+
+.container{
+    width: 500px;
+    margin: 20px 50px;
+}
+
+#login{
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #f8f8ff;
+    padding: 15px;
+}
+
+#login a{
+    color: var(--main-color);
+    font-size: 1.2rem;
+    font-family: 'Bangers', cursive;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.inputs input{
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+form{
+    text-align: left;
+}
+small{
+    font-size: 3px;
+}
+
+.checkbox{
+    text-align: left;
+}
+.checkbox div{
+    margin-bottom: 0.5rem;
+}
+.submitBtn{
+    margin:2rem 0;
+}
+
+.submitBtn input{
+    text-align: center;
+    width: 100%;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 20px;
+    padding: 1rem 0;
+    font-family: 'Bangers', cursive;
+}
+.submitBtn input:hover{
+    background-color: #b22222;
+    cursor: pointer;
+}
+
+@media (max-width: 993px){
+    #nav_menu li a{
+        font-size: 12px;
+    }
+    
+    .logo h5{
+        font-size: 23px;
+    }
+}

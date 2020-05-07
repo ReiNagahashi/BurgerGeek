@@ -1,0 +1,154 @@
+:root{
+    --main-color:#8b0000;
+}
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Bangers|Righteous&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffefd5;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* //Text Styles */
+.txtl{
+    font-size:2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.txtm{
+    font-size:1.2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.txts{
+    font-size:0.8rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+/* Home-Begin */
+
+.myWrap{
+    max-width: 1280px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.intro{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.intro h2{
+    font-family: 'Bangers',cursive;
+    color: #ff69b4;
+}
+
+/* Business */
+
+.card-image img{
+    height: 15rem;
+}
+
+.contents{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 1rem;
+}
+
+/* info */
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 5rem auto;
+    /* height: 30rem; */
+    color: #fff;
+    text-align: center;
+}
+
+.info h3{
+    margin-bottom: 20px;
+}
+
+.info p{
+    margin-bottom: 30px;
+}
+
+
+#delivery{
+    background-image: linear-gradient(
+        to right top,
+        #777,
+        rgba(255, 255, 255, 0.607)),
+    url(../img/delivery.jpg);
+    background-size: 100% 100%;
+    padding: 40px;
+}
+
+#restaurant{
+    background-image:url('../img/restaurant.jpg');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    padding: 40px;
+}
+
+
+/* Register */
+
+.register{
+    background-color:var(--main-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px; 
+    padding: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.register a{
+    color: #ff69b4;
+    font-size: 1.5rem;
+    font-family: 'Bangers', cursive;
+}
+
+@media (max-width: 993px){
+    .contents{
+        display: block;
+    }
+
+.info{
+    height: 18rem;
+}
+.info p{
+    font-size: 10px;
+}
+.info h3{
+    font-size: 20px;
+}
+.info button{
+    font-size: 10px;
+}
+
+#delivery{
+    padding: 0;
+}
+
+#restaurant{
+    padding: 0;
+}
+
+}
